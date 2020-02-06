@@ -66,5 +66,5 @@ Create "temp" folder and delete that folder - Extra Text Case
 <h3>Extend Framework:</h3>
 
 - Nightwatch allows capabilities to extend it's framework
-- Develoeprs can create custom commands, assertions, and reporter
+- Developers can create custom commands, assertions, and reporter
 - https://nightwatchjs.org/guide/extending-nightwatch/
