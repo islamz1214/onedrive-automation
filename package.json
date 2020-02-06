@@ -1,0 +1,32 @@
+{
+  "name": "onedrive-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "test": ""
+  },
+  "dependencies": {
+    "callback-timeout": "^4.0.0",
+    "chromedriver": "^79.0.2",
+    "fs": "^0.0.1-security",
+    "geckodriver": "^1.19.1",
+    "nightwatch": "^1.3.4"
+  },
+  "devDependencies": {
+    "tap": "^14.10.6"
+  },
+  "scripts": {
+    "test": "tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/islamz1214/onedrive-automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/islamz1214/onedrive-automation/issues"
+  },
+  "homepage": "https://github.com/islamz1214/onedrive-automation#readme"
+}
