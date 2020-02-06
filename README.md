@@ -20,11 +20,11 @@ Run -> npm install
 Run -> nightwatch -e chrome
 
 The following npm packages are used:
-- "callback-timeout": "^4.0.0"
-- "chromedriver": "^79.0.2"
-- "fs": "^0.0.1-security"
-- "geckodriver": "^1.19.1"
-- "nightwatch": "^1.3.4"
+- Name: callback-timeout, Version: 4.0.0, License: MIT, website = https://www.npmjs.com/package/callback-timeout
+- Name: chromedriver, Version: 79.0.2, License: Apache-2.0, website = https://www.npmjs.com/package/chromedriver
+- Name: fs, Version: 0.0.1-security, License: ISC, website = https://www.npmjs.com/package/fs
+- Name: geckodriver, Version: 1.19.1, License: MPL-2.0, website = https://www.npmjs.com/package/geckodriver
+- Name: nightwatch, Version: 1.3.4, License: MIT, website = https://www.npmjs.com/package/nightwatch
 
    
 <h3>Test Cases:</h3>
