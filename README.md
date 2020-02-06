@@ -1,5 +1,7 @@
 # onedrive-automation
 
+<h3>Setup:</h3>
+
 Create a microsoft account at https://login.live.com
 
 Create a config.js file in the root directory and paste the following (input microsoft credentials):
@@ -25,7 +27,7 @@ The following npm packages are used:
 - "nightwatch": "^1.3.4"
 
    
-<h3>Test Cases</h3>
+<h3>Test Cases:</h3>
 
 Login to OneDrive web application using user credentials
 - This test case ensures the user can login and is a dependency for next steps
