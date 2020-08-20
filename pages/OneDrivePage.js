@@ -45,12 +45,12 @@ module.exports = {
             selector: 'button[name=Save]'
         },
         tempFolder: {
-            // This selctor will be visible once the folder is create
+            // This selctor will be visible once the folder is created
             selector: '//span[contains(@data-automationid,"name")][text()="Temp"]',
             locateStrategy: 'xpath'
         },
         tempFolderCheckbox: {
-            // This selctor will be visible once the folder is create
+            // This selctor will be visible once the folder is created
             selector: 'div[data-automationid="Temp"] span[role=checkbox]'
         },
         textEditorButton: {

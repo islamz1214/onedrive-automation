@@ -171,10 +171,11 @@ module.exports = {
           .waitForElementVisible('@createButton')
           .click('@createButton')
           .waitForElementVisible('@tempFolder')
-          .assert.elementPresent('@tempFolder')
-          .waitForElementPresent('@tempFolderCheckbox')
+          .moveToElement('@tempFolder', 0, 0)
+          .waitForElementVisible('@tempFolderCheckbox')
           .click('@tempFolderCheckbox')
           .waitForElementVisible('@deleteButton')
+          .click('@deleteButton')
           .click('@deleteButton')
           .end()
      }
