@@ -17,7 +17,7 @@
     "tap": "^14.10.6"
   },
   "scripts": {
-    "test": "tap"
+    "test": "npx nightwatch -e chrome"
   },
   "repository": {
     "type": "git",
