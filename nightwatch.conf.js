@@ -23,7 +23,7 @@ module.exports = {
 
   test_settings: {
     default: {
-      disable_error_log: false,
+      disable_error_log: true,
       launch_url: 'https://nightwatchjs.org',
 
       screenshots: {

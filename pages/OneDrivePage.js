@@ -24,7 +24,7 @@ module.exports = {
             selector: 'i[data-icon-name=Info]'
         },
         infoIconDetails: {
-            selector: 'div[class="InfoPane-itemDetails-name"]'
+            selector: 'h1[class="od-DetailsPane-PrimaryPane-header-title"]'
         },
         infoIconSectionType: {
             selector: 'dl[class="InfoPaneSection-informationBody"] > dd:nth-of-type(1)'
@@ -39,7 +39,7 @@ module.exports = {
             selector: 'button[name=New]'
         },
         originalFile: {
-            selector: 'div[class="ms-List-cell"][data-list-index="1"] a[class="od-modifiedDateColumn-modifiedDate"]'
+            selector: 'div[class="ms-List-cell"][data-list-index="1"]'
         },
         saveButton: {
             selector: 'button[name=Save]'
@@ -57,7 +57,7 @@ module.exports = {
             selector: 'button[name="Open in Text Editor"]'
         },
         updatedFile: {
-            selector: 'div[class="ms-List-cell"][data-list-index="0"] a[class="od-modifiedDateColumn-modifiedDate"]'
+            selector: 'div[class="ms-List-cell"][data-list-index="0"]'
         },
         versionHistoryButton: {
             selector: 'button[name="Version history"]'
