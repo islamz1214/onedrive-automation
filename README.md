@@ -17,7 +17,7 @@ Create an empty "downloads" folder in the root directory
 
 Run -> npm install
 
-Run -> nightwatch -e chrome
+Run -> npx nightwatch -e chrome
 
 The following npm packages are used:
 - Name: callback-timeout, Version: 4.0.0, License: MIT, website = https://www.npmjs.com/package/callback-timeout
