@@ -11,10 +11,10 @@ module.exports = {
     signInPage
       .navigate()
       .waitForElementVisible('@emailInput')
-      .setValue('@emailInput', config.email)
+      .setValue('@emailInput', config.email || ONEDRIVE_EMAIL)
       .click('@nextSignInButton')
       .waitForElementVisible('@passwordInput')
-      .setValue('@passwordInput', config.password)
+      .setValue('@passwordInput', config.password || ONEDRIVE_PASSWORD)
       .waitForElementVisible('@nextSignInButton')
       .click('@nextSignInButton')
   },

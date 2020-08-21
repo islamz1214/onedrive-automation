@@ -21,6 +21,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
+      env:
+        ONEDRIVE_EMAIL: ${{ secrets.ONEDRIVE_EMAIL }}
+        ONEDRIVE_PASSWORD: ${{ secrets.ONEDRIVE_PASSWORD }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
