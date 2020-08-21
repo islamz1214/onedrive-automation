@@ -1,7 +1,5 @@
 'use strict'
-const { config } = require('../config.js')
 const { exec } = require("child_process");
-
 
 
 module.exports = {
@@ -11,10 +9,10 @@ module.exports = {
     signInPage
       .navigate()
       .waitForElementVisible('@emailInput')
-      .setValue('@emailInput', config.email || ONEDRIVE_EMAIL)
+      .setValue('@emailInput', process.env.EMAIL || $ONEDRIVE_EMAIL)
       .click('@nextSignInButton')
       .waitForElementVisible('@passwordInput')
-      .setValue('@passwordInput', config.password || ONEDRIVE_PASSWORD)
+      .setValue('@passwordInput', process.env.PASSWORD || $ONEDRIVE_PASSWORD)
       .waitForElementVisible('@nextSignInButton')
       .click('@nextSignInButton')
   },
