@@ -4,16 +4,11 @@
 
 Create a microsoft account at https://login.live.com
 
-Create a config.js file in the root directory and paste the following (input microsoft credentials):
+Create a .env file in the root directory and paste the following (input microsoft credentials):
 
-    const config = {
-        email: '',
-        password: '',
-    }
+    ONEDRIVE_EMAIL=[your one drive email]
+    ONEDRIVE_PASSWORD=[your one drive password]
 
-    module.exports = { config };
-
-Create an empty "downloads" folder in the root directory
 
 Run -> npm install
 
