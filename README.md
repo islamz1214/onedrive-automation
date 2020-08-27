@@ -1,6 +1,6 @@
 # onedrive-automation
 
-<h3>Setup:</h3>
+## Setup
 
 Create a microsoft account at https://login.live.com
 
@@ -8,21 +8,24 @@ Create a .env file in the root directory and paste the following (input microsof
 
     ONEDRIVE_EMAIL=[your one drive email]
     ONEDRIVE_PASSWORD=[your one drive password]
+    
+## Run
 
-
-Run -> npm install
-
-Run -> npx nightwatch -e chrome
+```shell
+$ npm install
+$ npx nightwatch -e chrome
+```
 
 The following npm packages are used:
 - Name: callback-timeout, Version: 4.0.0, License: MIT, website = https://www.npmjs.com/package/callback-timeout
-- Name: chromedriver, Version: 79.0.2, License: Apache-2.0, website = https://www.npmjs.com/package/chromedriver
+- Name: chromedriver, Version: 80.0., License: Apache-2.0, website = https://www.npmjs.com/package/chromedriver
 - Name: fs, Version: 0.0.1-security, License: ISC, website = https://www.npmjs.com/package/fs
 - Name: geckodriver, Version: 1.19.1, License: MPL-2.0, website = https://www.npmjs.com/package/geckodriver
 - Name: nightwatch, Version: 1.3.4, License: MIT, website = https://www.npmjs.com/package/nightwatch
 
-   
-<h3>Test Cases:</h3>
+---
+
+## Test Cases
 
 Login to OneDrive web application using user credentials
 - This test case ensures the user can login and is a dependency for next steps
@@ -53,12 +56,14 @@ Delete the document from OneDrive.
 Create "temp" folder and delete that folder - Extra Text Case
 - Title explains it well, assert the folder element exist
 
-<h3>Scalability:</h3>
+---
+
+## Scalability
 
 - Page object models allow for clean and reusable code
 - Files are organized to nightwatch standards
 
-<h3>Extend Framework:</h3>
+## Extend Framework
 
 - Nightwatch allows capabilities to extend it's framework
 - Developers can create custom commands, assertions, and reporter
