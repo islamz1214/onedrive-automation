@@ -67,6 +67,17 @@ module.exports = {
       }
     },
 
+    edge: {
+      desiredCapabilities : {
+        browserName : 'chrome',
+      },
+      webdriver: {
+        start_process: true,
+        port: 9514,
+        server_path: process.cwd() + '/drivers/msedgedriver.exe'
+      }
+    },
+
     chrome: {
       desiredCapabilities : {
         browserName : 'chrome',
@@ -74,7 +85,7 @@ module.exports = {
           prefs: {
               download : {
                 prompt_for_download : false,
-                default_directory : process.cwd() + '\\downloads\\'
+                default_directory : process.cwd() + '/downloads'
               }
           },
           

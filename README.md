@@ -18,10 +18,10 @@ $ npx nightwatch -e chrome
 
 The following npm packages are used:
 - Name: callback-timeout, Version: 4.0.0, License: MIT, website = https://www.npmjs.com/package/callback-timeout
-- Name: chromedriver, Version: 80.0., License: Apache-2.0, website = https://www.npmjs.com/package/chromedriver
+- Name: chromedriver, Version: 86.0., License: Apache-2.0, website = https://www.npmjs.com/package/chromedriver
 - Name: fs, Version: 0.0.1-security, License: ISC, website = https://www.npmjs.com/package/fs
 - Name: geckodriver, Version: 1.19.1, License: MPL-2.0, website = https://www.npmjs.com/package/geckodriver
-- Name: nightwatch, Version: 1.3.4, License: MIT, website = https://www.npmjs.com/package/nightwatch
+- Name: nightwatch, Version: 1.5.1, License: MIT, website = https://www.npmjs.com/package/nightwatch
 
 ---
 

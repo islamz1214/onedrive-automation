@@ -107,7 +107,7 @@ module.exports = {
         .waitForElementVisible('@textEditorButton')
         .click('@textEditorButton', function() {
             this.windowHandles(function(result) {
-              var handle = result.value[1];
+              var handle = result.value[2];
               this.switchWindow(handle);
             })
         })
