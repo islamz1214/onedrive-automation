@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="onedrive"
+    errors="1" failures="0" hostname="" id="" package="onedrive" skipped="9"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+        Error: An error occurred while retrieving a new session: &#34;Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, name: Onedrive}&#34;
+       at endReadableNT (_stream_readable.js:1220:12)
+       at processTicksAndRejections (internal/process/task_queues.js:84:21)
+    </system-err>
+  
+
+    
+    <error message="An error occurred while retrieving a new session: &#34;Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, name: Onedrive}&#34;"><![CDATA[
+      Error: An error occurred while retrieving a new session: &#34;Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, name: Onedrive}&#34;
+    at Selenium2Protocol.handleSessionCreateError (C:\Users\Zahidul Islam\Desktop\onedrive-automation\node_modules\nightwatch\lib\transport\transport.js:103:15)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Zahidul Islam\Desktop\onedrive-automation\node_modules\nightwatch\lib\transport\transport.js:159:32)
+    at HttpRequest.emit (events.js:315:20)
+    at HttpResponse.&lt;anonymous&gt; (C:\Users\Zahidul Islam\Desktop\onedrive-automation\node_modules\nightwatch\lib\http\request.js:142:19)
+    at HttpResponse.emit (events.js:315:20)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Zahidul Islam\Desktop\onedrive-automation\node_modules\nightwatch\lib\http\response.js:60:14)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1220:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Login to OneDrive web application using user credentials" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Upload, verify, and track status of 0 byte file" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Upload, verify, and track status of text file" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Select uploaded document, click info button, and verify metadata" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Update the contents of the text document from the OneDrive editor and click on save" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Download both versions" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Compare the contents to make sure they are downloaded correctly" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Delete the document from OneDrive." classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create &#34;temp&#34; folder and delete that folder - Extra Text Case" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="onedrive"
+    errors="0" failures="1" hostname="" id="" package="onedrive" skipped="8"
+    tests="1" time="5.955" timestamp="">
+  
+    <testcase name="Login to OneDrive web application using user credentials" classname="onedrive" time="5.955" assertions="1">  <failure message="Timed out while waiting for element &lt;#i0116&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5221ms)">    at Object.Login to OneDrive web application using user credentials (C:\Users\Zahidul Islam\Desktop\onedrive-automation\tests\onedrive.js:11:8)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="Upload, verify, and track status of 0 byte file" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Upload, verify, and track status of text file" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Select uploaded document, click info button, and verify metadata" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Update the contents of the text document from the OneDrive editor and click on save" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Download both versions" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Compare the contents to make sure they are downloaded correctly" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Delete the document from OneDrive." classname="onedrive">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Create &#34;temp&#34; folder and delete that folder - Extra Text Case" classname="onedrive">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

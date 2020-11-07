@@ -1,0 +1,40 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "page_objects_path": "pages",
+  "globals_path" : "",
+ 
+  "selenium" : {
+    "start_process" : false,
+    "server_path" : "",
+    "log_path" : "",
+    "host" : "10.0.0.15",
+    "default_path_prefix": "/wd/hub",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "",
+      "webdriver.ie.driver" : "",
+      "webdriver.firefox.profile" : ""
+    }
+  },
+ 
+  "test_workers" : {"enabled" : true, "workers" : "auto"},
+ 
+  "test_settings" : {
+    "default" : {
+      "selenium_port"  : 4444,
+      "selenium_host"  : "10.0.0.15/wd/hub",
+      "silent": false,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : ""
+      }
+    },
+ 
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    }
+  }
+}

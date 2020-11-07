@@ -21,11 +21,23 @@ module.exports = {
 
   webdriver: {},
 
+  
+  "selenium" : {
+    "start_process" : true,
+    "server_path" :  require('selenium-server').path,
+    "log_path" : "",
+    "host" : "10.0.0.15",
+    "default_path_prefix": "/wd/hub",
+    "port" : 4444,
+  },
+
+
   test_settings: {
     default: {
       disable_error_log: true,
       launch_url: 'https://nightwatchjs.org',
-
+      "selenium_port"  : 4444,
+      "selenium_host"  : "10.0.0.15/wd/hub",
       screenshots: {
         enabled: false,
         path: 'screens',
@@ -36,10 +48,7 @@ module.exports = {
         browserName : 'firefox'
       },
 
-      webdriver: {
-        start_process: true,
-        server_path: (Services.geckodriver ? Services.geckodriver.path : '')
-      }
+
     },
 
     firefox: {
@@ -57,7 +66,7 @@ module.exports = {
         }
       },
       webdriver: {
-        start_process: true,
+        start_process: false,
         port: 4444,
         server_path: (Services.geckodriver ? Services.geckodriver.path : ''),
         cli_args: [
@@ -69,7 +78,10 @@ module.exports = {
 
     edge: {
       desiredCapabilities : {
-        browserName : 'chrome',
+        browserName : 'MicrosoftEdge',
+        edgeOptions: {
+          w3c: false,
+        }
       },
       webdriver: {
         start_process: true,
@@ -90,7 +102,7 @@ module.exports = {
           },
           
           // This tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          // w3c: false,
+           w3c: false,
           // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
           args: [
             "start-maximized"
@@ -101,15 +113,6 @@ module.exports = {
           ]
         }
       },
-
-      webdriver: {
-        start_process: true,
-        port: 9515,
-        server_path: (Services.chromedriver ? Services.chromedriver.path : ''),
-        cli_args: [
-          // --verbose
-        ]
-      }
     },
 
     //////////////////////////////////////////////////////////////////////////////////

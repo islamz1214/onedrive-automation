@@ -11,7 +11,8 @@
     "chromedriver": "^86.0.0",
     "fs": "^0.0.1-security",
     "geckodriver": "^1.19.1",
-    "nightwatch": "^1.5.1"
+    "nightwatch": "^1.5.1",
+    "selenium-server": "^3.141.59"
   },
   "devDependencies": {
     "tap": "^14.10.6"
