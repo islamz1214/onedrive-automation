@@ -24,7 +24,7 @@ module.exports = {
             selector: 'i[data-icon-name=Info]'
         },
         infoIconDetails: {
-            selector: 'h1[class="od-DetailsPane-PrimaryPane-header-title"]'
+            selector: 'h2[class="od-DetailsPane-PrimaryPane-header-title"]'
         },
         infoIconSectionType: {
             selector: 'dl[class="InfoPaneSection-informationBody"] > dd:nth-of-type(1)'
@@ -42,7 +42,7 @@ module.exports = {
             selector: 'div[class="ms-List-cell"][data-list-index="1"]'
         },
         saveButton: {
-            selector: 'button[name=Save]'
+            selector: 'button[name="Save"]'
         },
         tempFolder: {
             // This selctor will be visible once the folder is created
@@ -63,7 +63,7 @@ module.exports = {
             selector: 'button[name="Version history"]'
         },
         viewLines: {
-            selector: 'div[class="view-lines"]'
+            selector: 'div[class="TextEditor"]'
         }
     }
 };

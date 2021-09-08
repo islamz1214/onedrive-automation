@@ -1,7 +1,9 @@
 'use strict'
+
+require('dotenv').config()
+
 const { exec } = require("child_process");
-
-
+const { inspect } = require('util');
 module.exports = {
   'Login to OneDrive web application using user credentials': function (browser) {
 
@@ -9,13 +11,19 @@ module.exports = {
     signInPage
       .navigate()
       .waitForElementVisible('@emailInput')
-      .setValue('@emailInput', process.env.ONEDRIVE_EMAIL || $ONEDRIVE_EMAIL)
-      .click('@nextSignInButton')
-      .waitForElementVisible('@passwordInput')
-      .setValue('@passwordInput', process.env.ONEDRIVE_PASSWORD || $ONEDRIVE_PASSWORD)
+      .setValue('@emailInput', process.env.ONEDRIVE_EMAIL)
       .waitForElementVisible('@nextSignInButton')
       .click('@nextSignInButton')
-  },
+      .waitForElementVisible('@passwordInput')
+      .waitForElementVisible('#idA_PWD_ForgotPassword')
+      .setValue('@passwordInput', process.env.ONEDRIVE_PASSWORD)
+      .waitForElementVisible('@nextSignInButton')
+      .click('@nextSignInButton')
+      .assert.title('Microsoft account')
+      .waitForElementVisible('@nextSignInButton')
+      .click('@nextSignInButton')
+      .waitForElementNotPresent('@nextSignInButton')
+    },
 
   'Upload, verify, and track status of 0 byte file' : function (browser) {
 
@@ -26,7 +34,8 @@ module.exports = {
         .waitForElementVisible('@documentsFolder')
         .click('@documentsFolder')
         .useCss()
-        .setValue('input[type="file"]', require('path').resolve(process.cwd() + '/test_data/empty-file.txt'))
+        .waitForElementPresent('input[type="file"]')
+        .setValue('input[type="file"]', require('path').resolve(process.env.BASE_PATH + '/test_data/empty-file.txt'))
         .waitForElementVisible('@itemDescription')
         .assert.containsText('@itemDescription', "Sorry, OneDrive can't upload empty folders or empty files. Please try again.")  
     },
@@ -40,7 +49,7 @@ module.exports = {
         .waitForElementVisible('@documentsFolder')
         .click('@documentsFolder')
         .useCss()
-        .setValue('input[type="file"]', require('path').resolve(process.cwd() + '/test_data/data-file.txt'))
+        .setValue('input[type="file"]', require('path').resolve(process.env.BASE_PATH + '/test_data/data-file.txt'))
         .waitForElementVisible('@dataFile')
         .assert.elementPresent('@dataFile')
     },
@@ -82,10 +91,12 @@ module.exports = {
               this.switchWindow(handle);
             })
         })
-        .waitForElementVisible('@viewLines')
-        .click('@viewLines', function() {
+        .waitForElementNotVisible('@textEditorButton')
+        .waitForElementPresent('div[class="TextEditor"]')
+        .click('div[class="TextEditor"]', function() {
             this.keys(' This file has been updated with Nightwatch JS.')
         })
+        .pause(2000)
         .waitForElementVisible('@saveButton')
         .click('@saveButton', function() {
           this.pause(5000) // Give some time to save before next step

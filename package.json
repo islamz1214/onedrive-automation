@@ -8,12 +8,15 @@
   },
   "dependencies": {
     "callback-timeout": "^4.0.0",
-    "chromedriver": "^86.0.0",
+    "chromedriver": "^91.0.1",
     "fs": "^0.0.1-security",
-    "geckodriver": "^1.19.1",
-    "nightwatch": "^1.5.1"
+    "geckodriver": "^2.0.2",
+    "nightwatch": "^1.7.7",
+    "nightwatch-html-reporter": "^2.0.6",
+    "selenium-standalone": "^7.1.0"
   },
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "tap": "^14.10.6"
   },
   "scripts": {
