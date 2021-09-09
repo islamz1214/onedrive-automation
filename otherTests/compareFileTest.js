@@ -1,10 +1,11 @@
+require('dotenv').config()
 const fs = require('fs')
 const tap = require('tap')
 const path = require('path')
 const timeout = require('callback-timeout');
-const directory = process.cwd() + '\\downloads\\';
-const originalFile = process.cwd() + '\\downloads\\data-file.txt';
-const updatedFile  = process.cwd() + '\\downloads\\data-file (1).txt';
+const directory = process.env.PROJECT_PATH  + '/downloads/';
+const originalFile = process.env.PROJECT_PATH + '/downloads/data-file.txt';
+const updatedFile  = process.env.PROJECT_PATH + '/downloads/data-file (1).txt';
 
 // Compare original file content
 fs.readFile(originalFile, function(err, file) {

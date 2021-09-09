@@ -120,14 +120,6 @@ $(document).ready(function() {
   <body>
     <h1>Nightwatch Results</h1>
     <div id="container"><a class="toggleSuccess" href="#">Show/Hide Successes</a>
-      <div class="errmessages">
-        <h2>Errors<span class="count"> (1)</span></h2>
-        <ul class="errors">
-          <li>[0;31m  TimeoutError: An error occurred while running .setValue() command on &lt;input[type=&quot;file&quot;]&gt;:   (Session info: chrome=92.0.4515.159),  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Linux 5.11.0-27-generic x86_64); invalid argument: File not found : /app/test_data/empty-file.txt
-   {&quot;status&quot;:-1,&quot;state&quot;:&quot;&quot;,&quot;code&quot;:&quot;&quot;,&quot;value&quot;:{&quot;message&quot;:&quot;invalid argument: File not found : /app/test_data/empty-file.txt&quot;,&quot;error&quot;:[&quot;  (Session info: chrome=92.0.4515.159)&quot;,&quot;  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Linux 5.11.0-27-generic x86_64)&quot;]},&quot;errorStatus&quot;:61,&quot;error&quot;:&quot;An unknown error has occurred – invalid argument: File not found : /app/test_data/empty-file.txt&quot;,&quot;httpStatusCode&quot;:200}[0m
-[0;90m       at Object.Upload, verify, and track status of 0 byte file (/home/zahid/Desktop/onedrive-automation/tests/onedrive.js:38:10)[0m</li>
-        </ul>
-      </div>
       <div class="package error">
         <h2 class="name">&#10005; onedrive</h2>
         <div class="suites">
@@ -136,53 +128,149 @@ $(document).ready(function() {
             <ul class="testcases">
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#i0116&gt; was visible after 1082 milliseconds.</div>
+                <div class="name">Element &lt;#i0116&gt; was visible after 719 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#idSIButton9&gt; was visible after 55 milliseconds.</div>
+                <div class="name">Element &lt;#idSIButton9&gt; was visible after 37 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#i0118&gt; was visible after 630 milliseconds.</div>
+                <div class="name">Element &lt;#i0118&gt; was visible after 692 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#idA_PWD_ForgotPassword&gt; was visible after 96 milliseconds.</div>
+                <div class="name">Element &lt;#idA_PWD_ForgotPassword&gt; was visible after 37 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#idSIButton9&gt; was visible after 54 milliseconds.</div>
+                <div class="name">Element &lt;#idSIButton9&gt; was visible after 42 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Testing if the page title equals [0;33m'Microsoft account'[0m [0;90m(57ms)[0m</div>
+                <div class="name">Testing if the page title equals [0;33m'Microsoft account'[0m [0;90m(17ms)[0m</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#idSIButton9&gt; was visible after 599 milliseconds.</div>
+                <div class="name">Element &lt;#idSIButton9&gt; was visible after 615 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;#idSIButton9&gt; was not present after 196 milliseconds.</div>
+                <div class="name">Element &lt;#idSIButton9&gt; was not present after 17 milliseconds.</div>
               </li>
             </ul>
           </div>
-          <div class="suite error">
+          <div class="suite success">
             <h3 class="name">Upload, verify, and track status of 0 byte file</h3>
             <ul class="testcases">
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;//span[contains(@data-automationid,&quot;name&quot;)][text()=&quot;Documents&quot;]&gt; was visible after 73 milliseconds.</div>
+                <div class="name">Element &lt;//span[contains(@data-automationid,&quot;name&quot;)][text()=&quot;Documents&quot;]&gt; was visible after 645 milliseconds.</div>
               </li>
               <li class="testcase success">
                 <div class="status">&#10003;</div>
-                <div class="name">Element &lt;input[type=&quot;file&quot;]&gt; was present after 136 milliseconds.</div>
+                <div class="name">Element &lt;input[type=&quot;file&quot;]&gt; was present after 17 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;div[class=OperationMonitor-itemDescription]&gt; was visible after 574 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element [0;33m&lt;Element [name=@itemDescription]&gt;[0m contains text [0;33m'Sorry, OneDrive can't upload empty folders or empty files. Please try again.'[0m [0;90m(40ms)[0m</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Upload, verify, and track status of text file</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;//span[contains(@data-automationid,&quot;name&quot;)][text()=&quot;Documents&quot;]&gt; was visible after 788 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;div[data-automationid=&quot;data-file.txt&quot;]&gt; was visible after 2794 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element [0;33m&lt;Element [name=@dataFile]&gt;[0m is present [0;90m(15ms)[0m</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Select uploaded document, click info button, and verify metadata</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;//span[contains(@data-automationid,&quot;name&quot;)][text()=&quot;Documents&quot;]&gt; was visible after 1338 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;div[data-automationid=&quot;data-file.txt&quot;] span[role=checkbox]&gt; was visible after 52 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;i[data-icon-name=Info]&gt; was visible after 64 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;h2[class=&quot;od-DetailsPane-PrimaryPane-header-title&quot;]&gt; was visible after 588 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element [0;33m&lt;Element [name=@infoIconDetails]&gt;[0m contains text [0;33m'data-file.txt'[0m [0;90m(40ms)[0m</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;dl[class=&quot;InfoPaneSection-informationBody&quot;] &gt; dd:nth-of-type(1)&gt; was visible after 66 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element [0;33m&lt;Element [name=@infoIconSectionType]&gt;[0m contains text [0;33m'Text Document'[0m [0;90m(75ms)[0m</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Delete the document from OneDrive.</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;//span[contains(@data-automationid,&quot;name&quot;)][text()=&quot;Documents&quot;]&gt; was visible after 1275 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;div[data-automationid=&quot;data-file.txt&quot;] span[role=checkbox]&gt; was visible after 51 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;button[name=Delete]&gt; was visible after 41 milliseconds.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite error">
+            <h3 class="name">Create &quot;temp&quot; folder and delete that folder - Extra Text Case</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;button[name=New]&gt; was visible after 45 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;button[name=Folder]&gt; was visible after 56 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;input[class=&quot;od-FolderBuilder-nameInput od-TextField-field&quot;]&gt; was visible after 58 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;button[class=&quot;od-Dialog-action od-Button--primary od-Button&quot;]&gt; was visible after 113 milliseconds.</div>
               </li>
               <li class="testcase error">
                 <div class="status">&#10005;</div>
-                <div class="name">Timed out while waiting for element &lt;div[class=OperationMonitor-itemDescription]&gt; to be present for 5000 milliseconds. - expected [0;32m&quot;visible&quot;[0m but got: [0;31m&quot;not found&quot;[0m [0;90m(5182ms)[0m Expected &quot;visible&quot; but got: &quot;not found&quot;</div>
-                <div class="screenshot"><img src="/reports/onedrive/Upload,-verify,-and-track-status-of-0-byte-file_FAILED_Sep-07-2021-143728-GMT-0400.png"></div>
+                <div class="name">Timed out while waiting for element &lt;//span[contains(@data-automationid,&quot;name&quot;)][text()=&quot;Temp&quot;]&gt; to be present for 5000 milliseconds. - expected [0;32m&quot;visible&quot;[0m but got: [0;31m&quot;not found&quot;[0m [0;90m(5239ms)[0m Expected &quot;visible&quot; but got: &quot;not found&quot;</div>
+                <div class="screenshot"><img src="/reports/onedrive/Create-temp-folder-and-delete-that-folder---Extra-Text-Case_FAILED_Sep-08-2021-224044-GMT-0500.png"></div>
               </li>
             </ul>
           </div>

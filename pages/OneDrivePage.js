@@ -38,8 +38,11 @@ module.exports = {
         newButton: {
             selector: 'button[name=New]'
         },
-        originalFile: {
-            selector: 'div[class="ms-List-cell"][data-list-index="1"]'
+        openFileButton: {
+            selector: 'button[name="Open File"]'
+        },
+        originalFileThreeDots: {
+            selector: 'div[class="od-Panel-container"] div[class="ms-List-cell"][data-list-index="1"] div[aria-colindex="2"]'
         },
         saveButton: {
             selector: 'button[name="Save"]'
@@ -56,8 +59,8 @@ module.exports = {
         textEditorButton: {
             selector: 'button[name="Open in Text Editor"]'
         },
-        updatedFile: {
-            selector: 'div[class="ms-List-cell"][data-list-index="0"]'
+        updatedFileThreeDots: {
+            selector: 'div[class="od-Panel-container"] div[class="ms-List-cell"][data-list-index="0"] div[aria-colindex="2"]'
         },
         versionHistoryButton: {
             selector: 'button[name="Version history"]'

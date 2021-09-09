@@ -8,6 +8,7 @@ Create a .env file in the root directory and paste the following (input microsof
 
     ONEDRIVE_EMAIL=[your one drive email]
     ONEDRIVE_PASSWORD=[your one drive password]
+    PROJECT_PATH=[your project path ex. /home/zahidulislam/Desktop/onedrive-automation]
     
 ## Run
 
